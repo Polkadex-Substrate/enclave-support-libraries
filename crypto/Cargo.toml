@@ -1,0 +1,11 @@
+[package]
+name = "crypto"
+version = "0.1.0"
+edition = "2018"
+authors = ["Gautham J <gautham@polkadex.trade>"]
+description = "Provides cryptographic schemes for use inside enclave"
+
+
+[dependencies]
+sp-core = { git = "https://github.com/paritytech/substrate.git", branch = "master"}
+rand_core = "0.6.3"

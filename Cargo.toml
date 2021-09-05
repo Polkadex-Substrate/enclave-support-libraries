@@ -1,0 +1,17 @@
+[package]
+name = "enclave-support-libraries"
+version = "0.1.0"
+edition = "2018"
+authors = ["Gautham J <gautham@polkadex.trade>"]
+
+[dependencies]
+crypto = { path = "crypto", optional = true }
+
+
+[workspace]
+members = ["crypto"]
+
+
+[features]
+default = ["crypto"]
+
