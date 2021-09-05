@@ -21,3 +21,6 @@ pub use crypto;
 
 #[cfg(feature = "extrinsics")]
 pub use extrinsics;
+
+#[cfg(feature = "itc-light-client")]
+pub use itc_light_client;

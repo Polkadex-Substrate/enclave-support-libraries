@@ -7,11 +7,12 @@ authors = ["Gautham J <gautham@polkadex.trade>"]
 [dependencies]
 crypto = { path = "crypto", optional = true }
 extrinsics = { path = "extrinsics", optional = true }
+itc-light-client = { git = "https://github.com/integritee-network/worker.git", optional = true }
 
 [workspace]
 members = ["crypto", "extrinsics"]
 
 
 [features]
-default = ["crypto", "extrinsics"]
+default = ["crypto", "extrinsics", "itc-light-client/std"]
 
