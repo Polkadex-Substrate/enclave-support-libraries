@@ -18,3 +18,6 @@
 
 #[cfg(feature = "crypto")]
 pub use crypto;
+
+#[cfg(feature = "extrinsics")]
+pub use extrinsics;

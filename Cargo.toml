@@ -1,17 +1,17 @@
 [package]
 name = "enclave-support-libraries"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2018"
 authors = ["Gautham J <gautham@polkadex.trade>"]
 
 [dependencies]
 crypto = { path = "crypto", optional = true }
-
+extrinsics = { path = "extrinsics", optional = true }
 
 [workspace]
-members = ["crypto"]
+members = ["crypto", "extrinsics"]
 
 
 [features]
-default = ["crypto"]
+default = ["crypto", "extrinsics"]
 

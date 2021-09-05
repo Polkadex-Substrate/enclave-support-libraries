@@ -1,0 +1,13 @@
+[package]
+name = "extrinsics"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex = { version = "0.4.3" }
+sp-runtime = { git = "https://github.com/paritytech/substrate.git", branch = "master" }
+sp-core = { git = "https://github.com/paritytech/substrate.git", branch = "master" }
+codec = { package = 'parity-scale-codec', version = "2.0.0", default-features = false,  features = ['derive']}
+sp-std = {  git = "https://github.com/paritytech/substrate.git", branch = "master" }
